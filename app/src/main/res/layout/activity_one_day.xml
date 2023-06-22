@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneDayActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="152dp"
+        android:layout_height="55dp"
+        android:text="Введите свои данные"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <EditText
+        android:id="@+id/moneyLn"
+        android:layout_width="223dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="№ местного кошелька"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/nameLn"
+        android:layout_width="221dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="92dp"
+        android:ems="10"
+        android:hint="ФИО"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/mestoLn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moneyLn"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownId" />
+
+    <EditText
+        android:id="@+id/mestoLn"
+        android:layout_width="237dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="120dp"
+        android:ems="10"
+        android:hint="№ места"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/forma"
+        android:layout_width="197dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="36dp"
+        android:text="оформление билета"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="назад"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/forma"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mestoLn"
+        app:layout_constraintVertical_bias="0.402" />
+</androidx.constraintlayout.widget.ConstraintLayout>
